@@ -19,7 +19,7 @@ interface MatrixTextProps {
 }
 
 const MatrixText = ({
-  text = "Welcome to NeuroNest",
+  text = "Welcome to TrainHub",
   className,
   initialDelay = 200,
   letterAnimationDuration = 500,
@@ -30,13 +30,13 @@ const MatrixText = ({
       char,
       isMatrix: false,
       isSpace: char === " ",
-    }))
+    })),
   );
   const [isAnimating, setIsAnimating] = useState(false);
 
   const getRandomChar = useCallback(
     () => (Math.random() > 0.5 ? "1" : "0"),
-    []
+    [],
   );
 
   const animateLetter = useCallback(
@@ -69,7 +69,7 @@ const MatrixText = ({
         }, letterAnimationDuration);
       });
     },
-    [getRandomChar, text, letterAnimationDuration]
+    [getRandomChar, text, letterAnimationDuration],
   );
 
   const startAnimation = useCallback(() => {
@@ -108,7 +108,7 @@ const MatrixText = ({
         textShadow: "none",
       },
     }),
-    []
+    [],
   );
 
   return (
@@ -116,7 +116,7 @@ const MatrixText = ({
       className={cn(
         "animate-slide-in mt-4",
         "flex items-center justify-center text-foreground",
-        className
+        className,
       )}
       aria-label="Matrix text animation"
     >

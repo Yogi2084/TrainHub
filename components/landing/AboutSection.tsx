@@ -37,25 +37,28 @@ const AboutSection = ({ id }: { id: string }) => {
           variants={itemVariants}
           className="text-4xl md:text-5xl font-bold text-foreground"
         >
-          What is NeuroNest?
+          What is TrainHub?
         </motion.h2>
         <motion.p
           variants={itemVariants}
           className="text-lg md:text-xl text-muted-foreground leading-relaxed"
         >
-          NeuroNest is an innovative AI-powered memory assistant designed to be
-          your personal second brain. It helps you effortlessly organize,
-          semantically search, and converse with your digital knowledge,
-          ensuring no insight is ever lost.
+          TrainHub is an innovative fitness and training platform 
+          designed to be your personal fitness companion. 
+          It helps you discover personalized workouts, track your progress,
+           and stay motivated throughout your fitness journey, 
+           making it easier to build consistent habits and achieve your goals.
         </motion.p>
         <motion.p
           variants={itemVariants}
           className="text-lg md:text-xl text-muted-foreground leading-relaxed mt-4"
         >
-          In today&apos;s information-rich world, remembering everything can be
-          challenging. NeuroNest solves this by creating a reliable, intelligent
-          repository for your thoughts, notes, and discoveries, making them
-          instantly accessible and actionable.
+          In today&apos;s busy lifestyle, 
+          staying consistent with fitness and keeping track of your progress 
+          can be challenging. TrainHub solves this by bringing your workouts, 
+          training plans, progress tracking, and fitness insights together 
+          in one powerful platform, helping you train smarter, stay focused, 
+          and become stronger every day.
         </motion.p>
       </motion.div>
     </section>

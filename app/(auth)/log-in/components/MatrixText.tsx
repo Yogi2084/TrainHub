@@ -19,7 +19,7 @@ interface MatrixTextProps {
 }
 
 const MatrixText = ({
-  text = "Welcome back to NeuroNest",
+  text = "Welcome back to TrainHub",
   className,
   initialDelay = 200,
   letterAnimationDuration = 500,

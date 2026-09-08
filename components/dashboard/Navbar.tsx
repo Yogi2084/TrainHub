@@ -64,7 +64,7 @@ const Navbar = () => {
     const element = document.getElementById(id);
     if (element) {
       console.log(
-        `Found element with id ${id}. OffsetTop: ${element.offsetTop}`
+        `Found element with id ${id}. OffsetTop: ${element.offsetTop}`,
       );
       gsap.to(window, {
         scrollTo: {
@@ -106,10 +106,10 @@ const Navbar = () => {
           <span
             className={cn(
               silkscreen.className,
-              "text-2xl font-bold text-foreground hover:text-violet-500 transition-colors"
+              "text-2xl font-bold text-foreground hover:text-violet-500 transition-colors",
             )}
           >
-            NeuroNest
+            TrainHub
           </span>
         </Link>
 
@@ -176,10 +176,10 @@ const Navbar = () => {
             <span
               className={cn(
                 silkscreen.className,
-                "text-xl font-bold text-primary-foreground hover:text-primary-foreground/80 transition-colors"
+                "text-xl font-bold text-primary-foreground hover:text-primary-foreground/80 transition-colors",
               )}
             >
-              NeuroNest
+              TrainHub
             </span>
           </Link>
           <Button

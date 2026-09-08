@@ -133,14 +133,14 @@ const NewHeroSection = ({ id }: { id: string }) => {
             "text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-extrabold text-foreground leading-tight drop-shadow-lg"
           )}
         >
-          NeuroNest
+          TrainHub
         </h1>
         <p
           ref={taglineRef}
           className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
         >
-          Your AI-powered second brain for seamless memory management,
-          intelligent search, and conversational insights.
+         Your AI-powered fitness companion for smarter workouts, 
+         personalized training, and real progress.
         </p>
         <div
           ref={ctaRef}

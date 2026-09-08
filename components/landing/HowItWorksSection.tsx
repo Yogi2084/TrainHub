@@ -50,7 +50,7 @@ const HowItWorksSection = ({ id }: { id: string }) => {
         variants={itemVariants}
         className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12"
       >
-        How NeuroNest Works
+        How TrainHub Works
       </motion.h2>
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">

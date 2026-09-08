@@ -27,7 +27,7 @@ const NewCallToActionSection = ({ id }: { id: string }) => {
         className="text-4xl md:text-5xl font-bold text-foreground mb-4 leading-tight"
       >
         <span className="text-white drop-shadow-[0_0_4px_#8b5cf6]">
-          Ready to unlock your ultimate memory?
+          Ready to transform your fitness journey?
         </span>
       </motion.h2>
       <motion.p
@@ -37,8 +37,8 @@ const NewCallToActionSection = ({ id }: { id: string }) => {
         variants={itemVariants}
         className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto"
       >
-        Join NeuroNest today and experience a new era of personal knowledge
-        management.
+        Join TrainHub today and take your workouts, 
+        progress, and performance to the next level.
       </motion.p>
       <motion.div
         initial="hidden"
