@@ -26,10 +26,10 @@ const NewFooter = ({ id }: { id: string }) => {
         variants={footerVariants}
         className="max-w-6xl mx-auto space-y-6"
       >
-        <p>&copy; {new Date().getFullYear()} NeuroNest. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} TrainHub. All rights reserved.</p>
         <div className="flex justify-center space-x-6 mt-2">
           <Link
-            href="https://github.com/Neuro-Nest"
+            href="https://github.com/Yogi2084/GYM-SERVER"
             className="hover:text-foreground transition-colors"
             target="_blank"
             rel="noopener noreferrer"

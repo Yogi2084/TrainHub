@@ -40,6 +40,7 @@ const NewCallToActionSection = ({ id }: { id: string }) => {
         Join TrainHub today and take your workouts, 
         progress, and performance to the next level.
       </motion.p>
+      
       <motion.div
         initial="hidden"
         whileInView="visible"
