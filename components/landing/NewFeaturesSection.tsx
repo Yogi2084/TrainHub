@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import {
-  Brain,
-  Search,
+  Dumbbell,
+  TrendingUp,
   MessageSquare,
-  Tag,
+  Calendar,
   Zap,
   Lock,
   Sparkles,
@@ -15,60 +15,60 @@ import {
 
 const features = [
   {
-    icon: <Brain className="w-6 h-6 text-blue-500" />,
-    title: "Memory Management",
+    icon: <Dumbbell className="w-6 h-6 text-blue-500" />,
+    title: "Workout Management",
     description:
-      "Store personal notes, URLs, and raw thoughts with full CRUD support and versioned updates. Keep your ideas organized and accessible whenever you need them.",
+      "Create, edit, and track your workouts with full CRUD support and versioned history. Keep your training plans organized and accessible whenever you need them.",
     status: "New",
-    tags: ["Notes", "CRUD"],
+    tags: ["Workouts", "CRUD"],
     colSpan: 2,
     hasPersistentHover: false,
   },
   {
-    icon: <Search className="w-6 h-6 text-emerald-500" />,
-    title: "Semantic Search",
+    icon: <TrendingUp className="w-6 h-6 text-emerald-500" />,
+    title: "Progress Tracking",
     description:
-      "Ask high-level, fuzzy questions and get relevant memory snippets powered by Mistral + Pinecone.",
+      "Monitor your strength gains, volume, and personal records over time with visual analytics and trend insights.",
     status: "AI-Boosted",
-    tags: ["AI", "Search"],
+    tags: ["Analytics", "Progress"],
   },
   {
     icon: <MessageSquare className="w-6 h-6 text-purple-500" />,
-    title: "Conversational Interface",
+    title: "AI Coach Chat",
     description:
-      "Chat naturally with your knowledge base, following up on queries with a thought partner.",
-    tags: ["Chat", "Natural"],
+      "Chat naturally with your AI fitness coach for workout advice, form tips, and personalized recommendations.",
+    tags: ["Chat", "AI"],
     status: "Live",
   },
   {
-    icon: <Tag className="w-6 h-6 text-pink-500" />,
-    title: "Smart Tagging",
+    icon: <Calendar className="w-6 h-6 text-pink-500" />,
+    title: "Training Schedule",
     description:
-      "Tagging helps categorize your memories for better organization and retrieval.",
-    tags: ["Tags", "Organize"],
+      "Plan your training splits and weekly routines so you always know what to train and when.",
+    tags: ["Schedule", "Plan"],
   },
   {
     icon: <Zap className="w-6 h-6 text-yellow-500" />,
-    title: "Quick Capture",
+    title: "Quick Log",
     description:
-      "Rapidly save thoughts and ideas with minimal friction to never lose an important insight.",
-    tags: ["Speed", "UX"],
+      "Rapidly log sets, reps, and weights with minimal friction so you never miss recording a workout.",
+    tags: ["Speed", "Log"],
     status: "Updated",
   },
   {
     icon: <Lock className="w-6 h-6 text-red-500" />,
-    title: "Secure Vault",
+    title: "Private & Secure",
     description:
-      "Your memories are encrypted and protected with enterprise-grade security and privacy.",
+      "Your fitness data is encrypted and protected with enterprise-grade security and full privacy control.",
     tags: ["Encrypted", "Private"],
     status: "Secure",
   },
   {
     icon: <Sparkles className="w-6 h-6 text-sky-500" />,
-    title: "Insight Generator",
+    title: "Smart Recommendations",
     description:
-      "Transform URLs into summarized insights using intelligent auto-summarization. Extract key takeaways instantly without reading the entire content.",
-    tags: ["Summarize", "AI"],
+      "Get AI-driven workout suggestions based on your training history, goals, and recovery — so your next session is always optimized.",
+    tags: ["AI", "Smart"],
     status: "Beta",
     colSpan: 2,
   },

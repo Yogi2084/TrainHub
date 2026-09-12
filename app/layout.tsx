@@ -6,6 +6,7 @@ import TanstackQueryClientProvider from "@/lib/integrations/tanstack-query-clien
 import { jura } from "@/lib/fonts";
 import { Toaster } from "sonner";
 import AnimatePresenceWrapper from "../components/ui/AnimatePresenceWrapper";
+import { SkipLink } from "@/components/ui/skip-link";
 import neuronestBanner from "@/public/neuronest-banner.jpg";
 
 export const metadata: Metadata = {
@@ -64,6 +65,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
           disableTransitionOnChange
         >
           <TanstackQueryClientProvider>
+            <SkipLink />
             <AnimatePresenceWrapper>{children}</AnimatePresenceWrapper>
             <Toaster />
           </TanstackQueryClientProvider>

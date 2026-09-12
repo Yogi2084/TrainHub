@@ -86,6 +86,7 @@ function DashboardContent({ children }: PropsWithChildren) {
         setSidebarOpenMobile={setSidebarOpenMobile}
       />
       <main
+        id="main-content"
         className={cn(
           "p-2 flex-1 transition-all duration-500 ease-in-out",
           state === "expanded" && !isMobile

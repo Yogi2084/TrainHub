@@ -24,11 +24,13 @@ const LandingPage = () => {
   return (
     <div className="min-h-screen relative overflow-hidden">
       <Navbar />
-      <NewHeroSection id="hero-section" />
+      <main id="main-content">
+        <NewHeroSection id="hero-section" />
       <AboutSection id="about-section" />
       <NewFeaturesSection id="features-section" />
       <HowItWorksSection id="how-it-works-section" />
       <NewCallToActionSection id="call-to-action-section" />
+      </main>
       <NewFooter id="footer-section" />
     </div>
   );
