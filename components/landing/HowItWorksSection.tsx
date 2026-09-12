@@ -1,26 +1,26 @@
 "use client";
 
 import { motion, easeOut } from "framer-motion";
-import { Brain, Search, MessageSquare } from "lucide-react"; // Using existing icons for illustration
+import { Dumbbell, TrendingUp, MessageSquare } from "lucide-react";
 
 const steps = [
   {
-    icon: <Brain className="w-8 h-8 text-violet-500" />,
-    title: "Capture Your Thoughts",
+    icon: <Dumbbell className="w-8 h-8 text-violet-500" />,
+    title: "Log Your Workouts",
     description:
-      "Effortlessly save notes, links, and ideas into your NeuroNest vault. Quick and intuitive input methods ensure you never lose an insight.",
+      "Effortlessly record your exercises, sets, reps, and weights. Quick and intuitive input methods ensure you never miss tracking a session.",
   },
   {
-    icon: <Search className="w-8 h-8 text-emerald-500" />,
-    title: "Intelligent Retrieval",
+    icon: <TrendingUp className="w-8 h-8 text-emerald-500" />,
+    title: "Track Your Progress",
     description:
-      "Utilize semantic search to find what you need by asking high-level, natural language questions. NeuroNest understands context, not just keywords.",
+      "Monitor your strength gains, volume, and personal records over time with visual analytics. TrainHub helps you see exactly how far you've come.",
   },
   {
     icon: <MessageSquare className="w-8 h-8 text-blue-500" />,
-    title: "Converse & Generate Insights",
+    title: "Train with AI Coach",
     description:
-      "Chat with your knowledge base, follow up on queries, and get AI-summarized insights from your stored information.",
+      "Chat with your AI fitness coach for workout advice, form tips, and personalized recommendations based on your training history and goals.",
   },
 ];
 
