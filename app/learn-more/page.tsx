@@ -4,8 +4,8 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {
-  Layers,
-  Search,
+  Dumbbell,
+  TrendingUp,
   MessageCircle,
   UserCheck,
   Server,
@@ -27,27 +27,27 @@ interface BentoItem {
 
 const neuroNestFeatures: BentoItem[] = [
   {
-    title: "Memory Management",
+    title: "Workout Management",
     description:
-      "Add, edit, and delete memories (text, URLs, notes). Tag and categorize your knowledge. View recent and historical memories.",
-    icon: <Layers className="w-7 h-7 text-[--color-primary]" />,
+      "Create, edit, and delete workouts and training plans. Tag and categorize your exercises. View recent and historical training sessions.",
+    icon: <Dumbbell className="w-7 h-7 text-[--color-primary]" />,
   },
   {
-    title: "Semantic Search (RAG)",
+    title: "Progress Tracking",
     description:
-      "Ask questions like 'What do I know about startups?' or 'Show me all notes related to marketing.' AI engine (Mistral + Pinecone) finds and summarizes relevant notes, with references for every answer.",
-    icon: <Search className="w-7 h-7 text-[--color-chart-2]" />,
+      "Ask questions like 'How much did I bench last month?' or 'Show me all my leg day sessions.' TrainHub analyzes your training data and summarizes your gains over time.",
+    icon: <TrendingUp className="w-7 h-7 text-[--color-chart-2]" />,
   },
   {
-    title: "AI Chat Interface",
+    title: "AI Coach Chat",
     description:
-      "Conversational UI for follow-up questions and deep dives. Real-time, chat-based experience.",
+      "Conversational UI for workout advice, form tips, and personalized recommendations. Real-time, chat-based coaching experience.",
     icon: <MessageCircle className="w-7 h-7 text-[--color-chart-3]" />,
   },
   {
     title: "Auth & Personalization",
     description:
-      "Secure sign up/login with BetterAuth (JWT). Your own private, persistent memory vault.",
+      "Secure sign up/login with BetterAuth (JWT). Your own private, persistent training profile and workout history.",
     icon: <UserCheck className="w-7 h-7 text-[--color-chart-4]" />,
   },
   {
@@ -59,7 +59,7 @@ const neuroNestFeatures: BentoItem[] = [
   {
     title: "Success Criteria",
     description:
-      "Store and retrieve memories, semantic RAG search, AI-generated answers with references, live chat, secure and personal.",
+      "Log and retrieve workouts, track progress over time, AI-generated coaching advice, live chat, secure and personal.",
     icon: <CheckCircle className="w-7 h-7 text-[--color-primary]" />,
   },
 ];
@@ -92,13 +92,13 @@ export default function LearnMorePage() {
       <div className="h-screen bg-[--color-background] text-[--color-foreground] p-5">
         <div className="max-w-5xl mx-auto py-5">
           <h1 className="text-3xl font-bold mb-3 text-center">
-            Discover NeuroNest
+            Discover TrainHub
           </h1>
           <p className="text-base text-center max-w-2xl mx-auto mb-7">
-            NeuroNest is your AI-powered memory assistant. Effortlessly store,
-            organize, and retrieve your personal knowledge&mdash;text, links,
-            notes, and more. Interact with your &ldquo;memories&rdquo; using
-            natural language, powered by advanced LLMs and semantic search.
+            TrainHub is your AI-powered fitness companion. Effortlessly log,
+            organize, and track your workouts&mdash;exercises, sets, reps,
+            and more. Interact with your training history using natural
+            language, powered by advanced AI and progress analytics.
           </p>
           <div className="bento-grid-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-5xl mx-auto mb-7">
             {neuroNestFeatures.map((item, index) => (
@@ -129,7 +129,7 @@ export default function LearnMorePage() {
             ))}
           </div>
           <p className="text-base text-center mb-4">
-            Ready to experience the future of personal knowledge management?
+            Ready to experience the future of personal fitness training?
           </p>
           <div className="flex justify-center">
             <Link href="/">
