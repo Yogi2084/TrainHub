@@ -29,6 +29,7 @@ import { useRouter } from "next/navigation";
 export default function SignUpForm() {
   const router = useRouter();
   const [signUpError, setSignUpError] = useState<string | null>(null);
+  const [signUpMessage, setSignUpMessage] = useState<string | null>(null);
   const [showPassword, setShowPassword] = useState(false);
   
 
@@ -41,20 +42,26 @@ export default function SignUpForm() {
     },
     onSubmit: async (value) => {
       const { name, email, password } = value.value;
-      const { error } = await auth.signUp.email({
+      setSignUpError(null);
+      setSignUpMessage(null);
+      const result = await auth.signUp.email({
         name,
         email,
         password,
         callbackURL: `/dashboard`,
       });
 
-      if (error) {
-        setSignUpError("Unable to sign up currently");
-        console.error(error);
+      if (result.error) {
+        setSignUpError(result.error.message);
         return;
       }
 
-      router.replace(`/dashboard`);
+      if (result.requiresEmailConfirmation) {
+        setSignUpMessage("Your account was created. Check your email to confirm your account before signing in.");
+        return;
+      }
+
+      router.replace("/dashboard");
     },
   });
 
@@ -319,6 +326,9 @@ export default function SignUpForm() {
 
                 {signUpError && (
                   <Caption variant="error">{signUpError}</Caption>
+                )}
+                {signUpMessage && (
+                  <Caption variant="info">{signUpMessage}</Caption>
                 )}
               </div>
             </form>

@@ -110,11 +110,14 @@ export const auth = {
 
       if (error) return { error: { message: error.message } };
 
-      if (data.user && callbackURL) {
+      if (data.session && callbackURL) {
         window.location.href = callbackURL;
       }
 
-      return { error: null };
+      return {
+        error: null,
+        requiresEmailConfirmation: Boolean(data.user && !data.session),
+      };
     },
   },
 
